@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWatch</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            background-image: url("bgblog.jpg");
+            background-position: center bottom;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .header p {
+            color: #666;
+        }
+
+        .article {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .article h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .article img {
+            max-width: 50%;
+            width: 50%;
+            height: auto;
+            margin: 0 auto 10px auto;
+            display: block;
+        }
+
+        .article p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 25px;
+        }
+
+        .article-form {
+            margin-bottom: 20px;
+        }
+
+        .article-form h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .article-form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .article-form input[type="text"],
+        .article-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .article-form textarea {
+            height: 150px;
+        }
+
+        .article-form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            
+        }
+
+        .article-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        ☁️⛅🌦️❄️Weather Spark 🌞🌤️⛈️🌈
+    </header>
+    <nav>
+        <ul>
+            <li><button onclick="location.href='index.html'">Home</button></li>
+            <li><button onclick="location.href='login.html'">Login and Sign up</button></li>
+            <li><button onclick="location.href='about.html'">About Us</button></li>
+            <li><button onclick="location.href='temp.html'">Temperature Converter</button></li>
+            <li><button onclick="location.href='graph.html'">Analysis and Statistics</button></li>
+            <li><button onclick="location.href='personals.html'">Personalization</button></li>
+            <li><button onclick="location.href='game.html'">Game</button></li>
+            <li><button onclick="location.href='chatbot.html'">Chatbot</button></li>
+            <li><button onclick="location.href='contact.html'">Contact Us</button></li>
+            <li><button onclick="location.href='help.html'">Help</button></li>
+            <li><button onclick="location.href='socials.html'">Socials</button></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="header">
+            <h1>Blogs and Articles</h1>
+            <p>Explore informative articles or blog posts about weather-related topics.</p>
+        </div>
+      
+        <!-- Article Form -->
+        <form class="article-form" id="articleForm">
+            <h2>Submit Your Own Article</h2>
+            <label for="articleTitle">Article Title:</label>
+            <input type="text" id="articleTitle" name="articleTitle" required>
+
+            <label for="articleContent">Article Content:</label>
+            <textarea id="articleContent" name="articleContent" required></textarea>
+            <p>
+            <input type="submit" value="Submit Article">
+            </p>
+        </form>
+    </div>
+
+    <script>
+        // Array to store predefined articles (for demonstration purpose)
+        let predefinedArticles = [
+            {
+                title: "Understanding Weather Phenomena",
+                image: "tornado.jpg",
+                content:" Weather phenomena, encompassing various atmospheric events like sunny days and severe storms, play a crucial role in shaping our environment and impacting our lives. They are driven by complex interactions between the Earth's atmosphere, land, and oceans. Solar radiation unevenly heats the Earth's surface, creating temperature gradients that drive atmospheric circulation. The Earth's rotation influences wind patterns and ocean currents through the Coriolis effect, forming diverse weather systems. Variations in atmospheric pressure, along with humidity and precipitation, are fundamental in driving weather patterns and events like rain, snow, and storms.These phenomena significantly affect ecosystems, human health, and infrastructure. Extreme weather events can lead to droughts, water scarcity, and increased risks of diseases, while also causing substantial damage to infrastructure. Weather patterns are also linked to broader climate phenomena like El Niño and La Niña, altering global weather conditions. Understanding these phenomena is vital for accurate weather forecasting, disaster preparedness, and addressing climate change impacts, ensuring long-term environmental sustainability and resilience."
+            },
+            {
+                title: "Seasonal Forecast for the Coming Year",
+                image: "climate.png",
+                content: "As we look ahead to the weather patterns for the upcoming year, various regions will experience a range of climatic conditions influenced by several key factors. The 2024 Atlantic hurricane season is expected to be notably active, with an 85% chance of above-normal activity. This could include 7 to 25 named storms, 8 to 13 hurricanes, and 4 to 7 major hurricanes, driven by near-record warm Atlantic temperatures and La Niña conditions​ (NOAA)​​ (Climate Prediction Center)​. Summer 2024 is forecasted to be warmer than average in the Southwest and Pacific Northwest, exacerbating drought and wildfire risks. Meanwhile, the Northeast may see increased rainfall, potentially leading to flooding​ (FOX Weather)​. The transition to La Niña typically brings warmer, drier conditions to the southern U.S. and wetter conditions to the northern regions​ (National Interagency Fire Center)​. These forecasts highlight the importance of preparedness, especially in hurricane-prone and drought-stricken areas​ (Climate Prediction Center)​​ (NOAA)​​ (Climate Prediction Center)​."
+            },
+
+            {
+                title: "Safety Tips During Extreme Heatwaves",
+                image: "heatwave.jpeg",
+                content: "Extreme heatwaves can pose serious health risks, but you can stay safe and cool during scorching temperatures by following some essential precautions. First, stay hydrated by drinking plenty of water, even if you're not thirsty, and avoid alcohol and caffeinated beverages as they can lead to dehydration​ (Climate Prediction Center)​. Limit outdoor activities, especially during the hottest parts of the day, and take frequent breaks in shaded or indoor areas if you must be outside​ (National Interagency Fire Center)​. Wear lightweight, light-colored, and loose-fitting clothes, and use a wide-brimmed hat and sunglasses for additional protection​ (Climate Prediction Center)​. Stay in air-conditioned places as much as possible, and if you don’t have air conditioning, visit public places like malls or libraries​ (FOX Weather)​. To cool down, take cool showers or baths, use wet cloths on your skin, or place your feet in cool water​ (National Interagency Fire Center)​. Finally, check on vulnerable individuals such as children, the elderly, and those with chronic illnesses to ensure they are safe and cool​ (FOX Weather)​​ (National Interagency Fire Center)​. These steps can help mitigate the risks of heat-related illnesses during extreme heatwaves."
+            }
+            ];
+
+       // Function to render predefined articles
+    function renderPredefinedArticles() {
+        let container = document.querySelector('.container');
+        let articleHTML = '';
+        predefinedArticles.forEach(article => {
+            articleHTML += `
+                <div class="article">
+                    <h2>${article.title}</h2>
+                    <img src="${article.image}" alt="${article.title}">
+                    <p>${article.content}</p>
+                </div>
+            `;
+        });
+        container.innerHTML += articleHTML;
+    }
+
+    // Call the function to render predefined articles
+    renderPredefinedArticles();
+
+    // Function to handle form submission
+    document.getElementById("articleForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get form values
+        let title = document.getElementById("articleTitle").value;
+        let content = document.getElementById("articleContent").value;
+
+        // Create new article object
+        let article = {
+            title: title,
+            content: content
+        };
+
+        // Render new article
+        renderNewArticle(article);
+
+        // Reset form
+        document.getElementById("articleTitle").value = "";
+        document.getElementById("articleContent").value = "";
+
+        // Show pop-up message
+        alert("Your article/blog has been posted!");
+
+        // Scroll to the end of the page
+        window.scrollTo(0, document.body.scrollHeight);
+    });
+
+    // Function to render new article
+    function renderNewArticle(article) {
+        let container = document.querySelector('.container');
+        let articleHTML = `
+            <div class="article">
+                <h2>${article.title}</h2>
+                <p>${article.content}</p>
+            </div>
+        `;
+        container.innerHTML += articleHTML;
+    }
+    </script>
+</body>
+</html>

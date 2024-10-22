@@ -1,0 +1,138 @@
+body {
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensure videos don't overflow */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+#date {
+  text-align: center;
+  font-size: 50px;
+  color: purple;
+  margin: 400px 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Ensure overlay is above videos */
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #00796b;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #004d40;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 2; /* Ensure container is above videos */
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.location {
+  font-size: 24px;
+  color: #00796b;
+}
+
+.temp {
+  font-size: 48px;
+  color: #d32f2f;
+}
+
+.description {
+  font-size: 25px; /* Increased font size */
+  color: #757575;
+  padding: 10px; /* Added padding for more space */
+  line-height: 1.5; /* Increased line height for better readability */
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.feels,
+.humidity,
+.wind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feels p,
+.humidity p,
+.wind p {
+  margin: 5px 0;
+}
+
+.bold {
+  font-weight: bold;
+  color: #00796b;
+}
+
+/* Make videos cover the entire screen */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Ensure videos are behind other content */
+}
+

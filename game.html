@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SkyWatch</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <header>
+        ☁️⛅🌦️❄️Weather Spark 🌞🌤️⛈️🌈
+      </header>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><button onclick="location.href='index.html'">Home</button></li>
+            <li><button onclick="location.href='login.html'">Login and Sign up</button></li>
+            <li><button onclick="location.href='about.html'">About Us</button></li>
+            <li><button onclick="location.href='temp.html'">Temperature Converter</button></li>
+            <li><button onclick="location.href='graph.html'">Analysis and Statistics</button></li>
+            <li><button onclick="location.href='personals.html'">Personalization</button></li>
+            <li><button onclick="location.href='game.html'">Game</button></li>
+            <li><button onclick="location.href='chatbot.html'">Chatbot</button></li>
+            <li><button onclick="location.href='contact.html'">Contact Us</button></li>
+            <li><button onclick="location.href='help.html'">Help</button></li>
+            <li><button onclick="location.href='socials.html'">Socials</button></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Matching Game</h1>
+        <ul id="stars-progress">
+        </ul>
+        <section class="score-panel">
+            <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+            <span class="moves"></span>
+        </section>
+
+        <ul class="deck"></ul>
+    </div>
+
+    <div class="restart">
+        <i class="fa fa-repeat"></i>
+    </div>
+    
+    <div class="wrapper">
+        <div class="popup">
+            <div class="popup-inside">
+                <div class="backgrounds">
+                    <div class="background"></div>
+                    <div class="background background2"></div>
+                    <div class="background background3"></div>
+                    <div class="background background4"></div>
+                    <div class="background background5"></div>
+                    <div class="background background6"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-wrapper">
+                    <h1>Score Card</h1>
+                    <ul class="stars">
+                    </ul>
+                    <span class="final-moves">0</span>
+                    <div class="button" onclick="document.body.classList.remove('active')">
+                        <span class="button-text">Play Again</span>
+                        <div class="button-backgrounds">
+                            <div class="button-circle button-circle1"></div>
+                            <div class="button-circle button-circle2"></div>
+                            <div class="button-circle button-circle3"></div>
+                            <div class="button-circle button-circle4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

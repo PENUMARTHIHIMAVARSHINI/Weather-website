@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyWatch</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="icon" href="icon.png" type="image/png">
+  <header>
+    ☁️⛅🌦️❄️Weather Spark 🌞🌤️⛈️🌈
+  </header>
+</head>
+<body>
+  <audio loop autoplay>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+  <nav>
+    <ul>
+        <li><button onclick="location.href='index.html'">Home</button></li>
+        <li><button onclick="location.href='login.html'">Login and Sign up</button></li>
+        <li><button onclick="location.href='about.html'">About Us</button></li>
+        <li><button onclick="location.href='temp.html'">Temperature Converter</button></li>
+        <li><button onclick="location.href='graph.html'">Analysis and Statistics</button></li>
+        <li><button onclick="location.href='personals.html'">Personalization</button></li>
+        <li><button onclick="location.href='game.html'">Game</button></li>
+        <li><button onclick="location.href='chatbot.html'">Chatbot</button></li>
+        <li><button onclick="location.href='contact.html'">Contact Us</button></li>
+        <li><button onclick="location.href='help.html'">Help</button></li>
+        <li><button onclick="location.href='socials.html'">Socials</button></li>
+    </ul>
+</nav>
+
+<div id="date"></div>
+  <div class="app">
+    <video autoplay muted loop id="bgVideo">
+      <source src="assets/clearskies.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="overlay">
+      <div class="search">
+        <input id="locationInput" placeholder="Enter location" type="text">
+      </div>
+      <div class="container">
+        <div class="top">
+          <div class="location">
+            <p id="locationName"></p>
+          </div>
+          <div class="temp">
+            <h1 id="temperature"></h1>
+          </div>
+          <div class="description">
+            <p id="weatherMain"></p>
+            <p id="weatherDescription"></p>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="feels">
+            <p class="bold" id="feelsLike"></p>
+            <p>Feels Like</p>
+          </div>
+          <div class="humidity">
+            <p class="bold" id="humidity"></p>
+            <p>Humidity</p>
+          </div>
+          <div class="wind">
+            <p class="bold" id="windSpeed"></p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script>
+    function setDate() {
+      const dateElement = document.getElementById('date');
+      const now = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const formattedDate = now.toLocaleDateString(undefined, options);
+      const dateString = `🗓️ ${formattedDate}`; 
+      dateElement.textContent = dateString;
+    }
+    window.onload = setDate;
+  </script>  
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWatch - FAQ</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        body {
+            background-image: url("bghelp.jpg");
+            margin: 0;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        .container {
+            max-width: 1480px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .category {
+            font-size: 40px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+            color: #007BFF;
+            margin: 10px 0;
+            transition: color 0.3s;
+        }
+
+        .question:hover {
+            color: #0056b3;
+        }
+
+        .answer {
+            display: none;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .answer p {
+            margin: 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+    </style>
+    <header>
+        ☁️⛅🌦️❄️ Weather Spark 🌞🌤️⛈️🌈
+    </header>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><button onclick="location.href='index.html'">Home</button></li>
+            <li><button onclick="location.href='login.html'">Login and Sign up</button></li>
+            <li><button onclick="location.href='about.html'">About Us</button></li>
+            <li><button onclick="location.href='temp.html'">Temperature Converter</button></li>
+            <li><button onclick="location.href='graph.html'">Analysis and Statistics</button></li>
+            <li><button onclick="location.href='personals.html'">Personalization</button></li>
+            <li><button onclick="location.href='game.html'">Game</button></li>
+            <li><button onclick="location.href='chatbot.html'">Chatbot</button></li>
+            <li><button onclick="location.href='contact.html'">Contact Us</button></li>
+            <li><button onclick="location.href='help.html'">Help</button></li>
+            <li><button onclick="location.href='socials.html'">Socials</button></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="header">
+            <p>Here are some common questions about weather and their answers.</p>
+        </div>
+
+        <div class="category">General 🌍</div>
+        <div class="question">What is a weather forecast?</div>
+        <div class="answer">
+            <p>A weather forecast is a prediction of future weather conditions for a specific location over a specified period of time. It is typically provided by meteorologists using data from satellites, weather stations, and computer models.</p>
+        </div>
+
+        <div class="question">How are weather forecasts made?</div>
+        <div class="answer">
+            <p>Weather forecasts are made using various tools and techniques, including satellite imagery, weather radar, computer models, and historical data analysis. Meteorologists use this data to predict atmospheric conditions such as temperature, precipitation, and wind patterns.</p>
+        </div>
+
+        <div class="category">Accuracy 🔍</div>
+        <div class="question">How accurate are weather forecasts?</div>
+        <div class="answer">
+            <p>Weather forecasts can vary in accuracy depending on factors such as the time frame, location, and complexity of the weather patterns. Short-term forecasts (up to 48 hours) tend to be more accurate than long-term forecasts. Advances in technology and data collection have improved forecast accuracy over the years.</p>
+        </div>
+
+        <div class="category">Weather vs Climate 🌡️</div>
+        <div class="question">What is the difference between weather and climate?</div>
+        <div class="answer">
+            <p>Weather refers to the short-term atmospheric conditions in a specific place at a specific time, such as temperature, humidity, precipitation, and wind. Climate, on the other hand, refers to the long-term average of weather patterns in a particular region over an extended period of time, typically 30 years or more.</p>
+        </div>
+
+        <div class="category">Severe Weather ⚠️</div>
+        <div class="question">What should I do during a tornado warning?</div>
+        <div class="answer">
+            <p>During a tornado warning, seek shelter immediately in a basement or an interior room on the lowest floor of your home, away from windows. If you are outdoors or in a mobile home, find a sturdy building or lie flat in a ditch or low-lying area away from trees and vehicles.</p>
+        </div>
+
+        <div class="question">How do I prepare for a hurricane?</div>
+        <div class="answer">
+            <p>To prepare for a hurricane, create an emergency kit with essential supplies, such as water, food, medications, flashlights, and batteries. Secure your home by boarding windows and doors, and have a plan for evacuation if necessary. Stay informed by monitoring weather updates and following instructions from local authorities.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle visibility of answers
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

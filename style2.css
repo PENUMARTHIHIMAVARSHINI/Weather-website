@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 130%;
+    font-weight: bold;
+    color: rgb(26, 0, 128);
+    background-position: center top;
+}
+
+.contact-form{
+    color:black;
+}
+
+h1{
+    text-align: center;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2{
+    color: black
+}
+.contact-info,
+.contact-form {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.contact-info p {
+    margin: 0.5em 0;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em; /* Add space between input fields and button */
+}
+
+.input-container input,
+.input-container textarea {
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius:8px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: pink; /* Keep the button color */
+    border-radius: 25px;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+.contact-form button:hover {
+    background-color: plum;
+}
+
+footer {
+   
+    color: black;
+    text-align: center;
+    padding: 1em 0;
+}
+
+  .info-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-item img {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("bgcontact.jpg");
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: pink;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
+    max-width: 300px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Unique design for the pop-up */
+.modal-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-content p::before {
+    content: "\2714"; /* Unicode character for a checkmark */
+    font-size: 36px;
+    display: block;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Green color */
+}

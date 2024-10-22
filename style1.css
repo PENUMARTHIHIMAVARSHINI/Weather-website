@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 150%;
+    background-image: url("bgabout.jpg");
+    background-position: center top;
+}
+
+header,
+main,
+footer {
+    position: relative;
+    z-index: 2;
+}
+
+main {
+    padding: 0.2px; /* Reduced padding */
+}
+
+section {
+    margin-bottom: 1em; /* Reduced margin */
+}
+
+h2 {
+    border-bottom: 2px solid plum;
+    padding-bottom: 0.5em;
+    color: crimson;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+.mission,
+.team,
+.background {
+    padding: 1em; /* Reduced padding */
+    border-radius: 10px;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 1em; /* Reduced margin */
+    max-width: 100%;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.team-member {
+    min-width: 29%;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 1em;
+}
+
+.image-card {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.image-card img {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    border-radius: 30%; /* Make image round */
+    object-fit: cover; /* Ensure the image covers the box and maintains aspect ratio */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure the image is a block-level element */
+}
+
+.image-card .info {
+    padding: 0.5em;
+}
+
+.image-card h3 {
+    margin-top: 0.5em;
+    color: black;
+}
+
+.image-card p {
+    color: #333;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button.prev,
+button.next {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 1em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 2em;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 0.5em;
+}
+
+button.next {
+    right: 0.5em;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    font-size: 150%;
+    color: chocolate;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+}

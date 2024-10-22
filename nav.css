@@ -1,0 +1,50 @@
+/* Style the navigation bar */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent; /* Purple background color */
+  padding: 10px 0;
+  list-style-type: none;
+  position: sticky;
+  top: 100px;
+  left: 0; /* Ensures the navbar starts from the left edge */
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out; /* Smooth transition for hiding/showing */
+}
+
+/* Style the navigation buttons */
+nav ul li {
+  margin: 5 5px;
+}
+
+nav ul li button {
+  background-color: transparent; /* Pink button color */
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Change button color on hover */
+nav ul li button:hover {
+  background-color: #c24e7c; /* Darker pink on hover */
+}
+
+
+
+/* Move the container down */
+.app {
+  margin-top: 180px; /* Adjust this value to create space between navbar and container */
+}
+
+header{
+  text-align: center;
+  font-size: 100px;;
+  font-weight: bolder;
+  color: rgb(250, 0, 0);
+}

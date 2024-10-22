@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="nav.css">
+    <title>SkyWatch</title>
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<header>
+    ☁️⛅🌦️❄️Weather Spark 🌞🌤️⛈️🌈
+  </header>
+<body>
+    <nav>
+        <ul>
+            <li><button onclick="location.href='index.html'">Home</button></li>
+            <li><button onclick="location.href='login.html'">Login and Sign up</button></li>
+            <li><button onclick="location.href='about.html'">About Us</button></li>
+            <li><button onclick="location.href='temp.html'">Temperature Converter</button></li>
+            <li><button onclick="location.href='graph.html'">Analysis and Statistics</button></li>
+            <li><button onclick="location.href='personals.html'">Personalization</button></li>
+            <li><button onclick="location.href='game.html'">Game</button></li>
+            <li><button onclick="location.href='chatbot.html'">Chatbot</button></li>
+            <li><button onclick="location.href='contact.html'">Contact Us</button></li>
+            <li><button onclick="location.href='help.html'">Help</button></li>
+            <li><button onclick="location.href='socials.html'">Socials</button></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>At "Weather Spark", our mission is to empower individuals and communities with accurate, timely, and accessible weather information. We strive to provide comprehensive forecasts, real-time updates, and insightful analysis to help our users make informed decisions about their daily activities, travel plans, and safety precautions. Our dedication to excellence drives us to continually innovate and refine our services, ensuring that we deliver the most reliable and user-friendly weather platform available. With a commitment to transparency and integrity, we aim to foster trust and confidence in our forecasts, serving as a dependable resource for weather-related needs worldwide. Join us in our mission to navigate the elements with confidence and preparedness.</p>
+        </section>
+        <section class="team">
+            <h2>Our Team</h2>
+            <p>At "Weather Spark", our team is comprised of passionate meteorologists, data scientists, and technology enthusiasts dedicated to delivering the highest quality weather information to our users. With diverse backgrounds and expertise, we collaborate seamlessly to ensure accuracy and reliability in our forecasts and services. Each member of our team brings a unique perspective and skill set, whether it's analyzing weather patterns, developing cutting-edge algorithms, or enhancing user experience. Together, we are committed to continuous improvement and innovation, striving to stay at the forefront of weather technology and provide unparalleled value to our users. Meet the faces behind the forecasts and discover the expertise driving our mission forward.</p>
+        </section>
+        <section class="background">
+            <h2>Meet the Team</h2>
+            <div class="carousel">
+                <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="team-member">
+                            <div class="image-card">
+                                <img src="navya.png" alt="">
+                                <div class="info">
+                                    <h3>Dr. D Navya</h3>
+                                    <p>Chief Meteorologist with over 20 years of experience in weather forecasting and research.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="image-card">
+                                <img src="swati.png" alt="">
+                                <div class="info">
+                                    <h3>Dr. Swati V</h3>
+                                    <p>Data Scientist specializing in meteorological data analysis and model development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="image-card">
+                                <img src="neha.png" alt="Emily Johnson">
+                                <div class="info">
+                                    <h3>Dr. Neha S</h3>
+                                    <p>Senior Meteorologist with a focus on severe weather events and climate studies.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="image-card">
+                                <img src="hima.png" alt="">
+                                <div class="info">
+                                    <h3> P Hima Varshini</h3>
+                                    <p>Technical Specialist in meteorological software development and data visualization.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Weatherwise Forecast</p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>

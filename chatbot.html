@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyWatch</title>
+  <link rel="stylesheet" href="chatbot.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="icon" href="icon.png" type="image/png">
+  <style>
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1; /* Place it behind everything */
+      background-size: cover;
+  }
+  </style>
+  <header>
+     ☁️⛅🌦️❄️Weather Spark 🌞🌤️⛈️🌈
+  </header>
+</head>
+<body>
+<nav>
+  <ul>
+      <li><button onclick="location.href='index.html'">Home</button></li>
+      <li><button onclick="location.href='login.html'">Login and Sign up</button></li>
+      <li><button onclick="location.href='about.html'">About Us</button></li>
+      <li><button onclick="location.href='temp.html'">Temperature Converter</button></li>
+      <li><button onclick="location.href='graph.html'">Analysis and Statistics</button></li>
+      <li><button onclick="location.href='personals.html'">Personalization</button></li>
+      <li><button onclick="location.href='game.html'">Game</button></li>
+      <li><button onclick="location.href='chatbot.html'">Chatbot</button></li>
+      <li><button onclick="location.href='contact.html'">Contact Us</button></li>
+      <li><button onclick="location.href='help.html'">Help</button></li>
+      <li><button onclick="location.href='socials.html'">Socials</button></li>
+  </ul>
+</nav>
+  <div id="chatbox">
+    <div class="message received">
+      <p>Hello! What's the weather like today?</p>
+    </div>
+    <div id="weather-options">
+      <button id="sunny-btn">Sunny</button>
+      <button id="rainy-btn">Rainy</button>
+      <button id="cloudy-btn">Cloudy</button>
+      <button id="windy-btn">Windy</button>
+    </div>
+    <div id="user-input">
+      <input type="text" id="user-message" placeholder="Today's weather...">
+      <button type="button" id="send-btn">Send</button>
+    </div>
+  </div>
+  
+  
+  <script src="chatbot.js"></script>
+</body>
+</html>

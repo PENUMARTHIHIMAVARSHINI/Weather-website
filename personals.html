@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyWatch</title>
+  <link rel="stylesheet" href="personal.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+  <header>
+    ☁️⛅🌦️❄️Weather Spark 🌞🌤️⛈️🌈
+  </header>
+  <nav>
+    <ul>
+      <li><button onclick="location.href='index.html'">Home</button></li>
+      <li><button onclick="location.href='login.html'">Login and Sign up</button></li>
+      <li><button onclick="location.href='about.html'">About Us</button></li>
+      <li><button onclick="location.href='temp.html'">Temperature Converter</button></li>
+      <li><button onclick="location.href='graph.html'">Analysis and Statistics</button></li>
+      <li><button onclick="location.href='personals.html'">Personalization</button></li>
+      <li><button onclick="location.href='game.html'">Game</button></li>
+      <li><button onclick="location.href='chatbot.html'">Chatbot</button></li>
+      <li><button onclick="location.href='contact.html'">Contact Us</button></li>
+      <li><button onclick="location.href='help.html'">Help</button></li>
+      <li><button onclick="location.href='socials.html'">Socials</button></li>
+    </ul>
+  </nav>
+  <div class="form-container">
+    <h1>User Preferences Form</h1>
+    <p> Fill the form to know which weather you like👍</p>
+    <form id="preferencesForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="color">Favorite Color:</label>
+        <select id="color" name="color">
+            <option value="blue">🔵 Blue</option>
+            <option value="green">🟢 Green</option>
+            <option value="yellow">🟡 Yellow</option>
+            <option value="orange">🟠 Orange</option>
+            <option value="grey">⚪ Grey</option>
+            <option value="black">⚫ Black</option>
+        </select><br><br>
+
+        <label for="food">Favorite Food:</label>
+        <select id="food" name="food">
+            <option value="ice cream">🍦 Ice Cream</option>
+            <option value="spicy">🌶️ Spicy</option>
+            <option value="bbq">🍖 BBQ</option>
+            <option value="soup">🍲 Soup</option>
+        </select><br><br>
+
+        <label for="animal">Favorite Animal:</label>
+        <select id="animal" name="animal">
+            <option value="bird">🐦 Bird</option>
+            <option value="butterfly">🦋 Butterfly</option>
+            <option value="fish">🐟 Fish</option>
+            <option value="frog">🐸 Frog</option>
+            <option value="bear">🐻 Bear</option>
+            <option value="penguin">🐧 Penguin</option>
+        </select><br><br>
+
+        <button type="button" onclick="displayPreferences()">Submit</button>
+    </form>
+    <div id="preferencesDisplay" class="preferences-display"></div>
+
+  <a href="blog.html"> Refer to Blogs and Articles</a>
+  </div>
+  <script src="script10.js"></script>
+</body>
+</html>
